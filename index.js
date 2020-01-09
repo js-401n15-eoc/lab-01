@@ -95,10 +95,10 @@ const nonBinaryFred = {
   children: [],
 };
 
-validator.isValid(susan, personRules);
-validator.isValid(baldSusan, personRules);
-validator.isValid(noColorSusan, personRules);
-validator.isValid(fred, personRules);
-validator.isValid(fredWithProperChildren, personRules);
-validator.isValid(fredWithInvalidChildren, personRules);
-validator.isValid(nonBinaryFred, personRules);
+console.log('Name: Susan, Valid: ' + validator.isValid(susan, personRules));
+console.log('Name: Susan (bald), Valid: ' + validator.isValid(baldSusan, personRules));
+console.log('Name: Susan (no hair color), Valid: ' + validator.isValid(noColorSusan, personRules));
+console.log('Name: Fred, Valid: ' + validator.isValid(fred, personRules));
+console.log('Name: Fred (with proper children), Valid: ' + validator.isValid(fredWithProperChildren, personRules));
+console.log('Name: Fred, (with invalid children), Valid: ' + validator.isValid(fredWithInvalidChildren, personRules));
+console.log('Name: Fred (non-binary), Valid: ' + validator.isValid(nonBinaryFred, personRules));
