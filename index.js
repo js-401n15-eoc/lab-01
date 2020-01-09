@@ -96,7 +96,9 @@ const nonBinaryFred = {
 };
 
 validator.isValid(susan, personRules);
-// validator.isValid(baldSusan, personRules);
-//validator.isValid(noColorSusan, personRules);
-// validator.isValid(fred, personRules);
-//validator.isValid(fredWithInvalidChildren, personRules);
+validator.isValid(baldSusan, personRules);
+validator.isValid(noColorSusan, personRules);
+validator.isValid(fred, personRules);
+validator.isValid(fredWithProperChildren, personRules);
+validator.isValid(fredWithInvalidChildren, personRules);
+validator.isValid(nonBinaryFred, personRules);
